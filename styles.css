@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.bg_img {
+    position:absolute;
+    height: 100vh;
+    width: 33vw;
+    background-image: url(/Files/a48c5c6d31119800605ef0de228e4631.png);
+    background-repeat: no-repeat;
+    background-size: cover;    /*  fills the background with the img  */
+    left: 0px;
+}
+
+.main_content {
+    position: absolute;
+    height: 100vh;
+    width: 66vw;
+    background-color: #fff;
+    right: 0px;
+}
+
+.transparent {
+    position: absolute;
+    top: 25vh;
+    height: 15vh;
+    width: 33vw;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 9;
+}
