@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -12,6 +15,7 @@
     right: 0px;
     display: flex;
     flex-direction: column;
+    font-family: 'League Gothic';
 }
 
 .transparent {
@@ -32,10 +36,14 @@
 
 .one {
     display: flex;
+    background-color: rgb(233, 231, 231);
+    font-family: 'League Gothic', sans-serif;
 }
 
 .two {
-    background-color: rgba(211, 211, 211, 0.616);
+    display: flex;
+    background-color: rgba(248, 248, 248, 0.616);
+    box-shadow: 0px 5px lightgray;
 }
 
 /* logo styling */
@@ -69,15 +77,65 @@ div > img {
 }
 
 p {
-    margin-top: 20vh;
+    margin-top: 15vh;
     margin-left: 3vw;
-    font-family: 'Fascinate';
-    font-size: large;
+    font-size: 2rem;
     
 }
 
-form > div {
+form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 5%;
+    gap: 2rem;
+}
+
+.inputs {
     display: flex;
     flex-direction: column;
-    flex: 2;
+    width: 40%;
+}
+
+h2 {
+    margin-top: 1rem;
+    width: 100%;
+    letter-spacing: .3rem;
+}
+
+input:focus {
+    box-shadow: 5px 5px lightgray;
+    outline:  lightblue solid 2px;
+}
+
+label {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.error {
+    outline: red solid 2px;
+}
+
+input {
+    border-radius: 5px;
+}
+
+#err_pwd {
+    font-size: smaller;
+    color: red;
+}
+
+.btn {
+    margin-left: 5%;
+    margin-top: 5%;
+    gap: 10px;
+}
+
+button {
+    background-color: #363c68;
+    height: 3rem;
+    width: 13rem;
+    border-radius: 10px;
+    color: #fff;
+    font-family: 'Roboto Mono', monospace;
 }
